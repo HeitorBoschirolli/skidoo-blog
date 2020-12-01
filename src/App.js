@@ -1,11 +1,9 @@
 import 'fontsource-roboto';
+import Home from './components/home';
 
 function App() {
   return (
-    <div>
-      <p>abcdefghijklmnopqrstuvwxyz</p>
-      <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-    </div>
+    <Home></Home>
   );
 }
 
