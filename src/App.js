@@ -1,9 +1,13 @@
 import 'fontsource-roboto';
-import Home from './components/home';
+import Home from './components/Home';
+import PostsRow from './components/PostsRow';
 
 function App() {
   return (
-    <Home></Home>
+    <>
+      <Home></Home>
+      <PostsRow />
+    </>
   );
 }
 
