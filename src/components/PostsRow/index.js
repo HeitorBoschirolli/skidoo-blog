@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import { Container } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,7 +22,7 @@ const PostsRow = () => {
   function FormRow() {
     return (
       <React.Fragment>
-          <Grid container spacing="3" xs={11} direction="row" justify="left">
+          <Grid container spacing={3} direction="row">
             <Grid item xs={2}>
               <Paper className={classes.paper}>item</Paper>
             </Grid>
