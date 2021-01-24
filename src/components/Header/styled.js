@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../helpers/colors";
 import { Toolbar, Typography } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 export const StyledTypography = styled(Typography)`
     flex-grow: 1;
@@ -8,6 +9,11 @@ export const StyledTypography = styled(Typography)`
 
 export const StyledToolBar = styled(Toolbar)`
     background-color: ${colors.black};
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: white;
 `;
 
 // the negative margin is to compensate for chrome's default margin

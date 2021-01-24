@@ -1,16 +1,16 @@
-import { Container } from '@material-ui/core';
 import 'fontsource-roboto';
-import Home from './components/Home';
-import PostsRow from './components/PostsRow';
+import Header from './components/Header';
+import Home from './pages/Home';
+import {Route, BrowserRouter as Router} from "react-router-dom";
+import JavaLambdaPartOne from './pages/JavaLambdaPartOne';
 
 function App() {
   return (
-    <>
-      <Home></Home>
-      <Container>
-        <PostsRow />
-      </Container>
-    </>
+    <Router>
+      <Header />
+      <Route path="/" exact component={Home}/>
+      <Route path="/java-lambda-part-one" exact component={JavaLambdaPartOne}/>
+    </Router>
   );
 }
 

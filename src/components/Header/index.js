@@ -1,6 +1,7 @@
 import React from 'react';
-import { GradientDiv, StyledToolBar, StyledTypography } from './styled';
+import { GradientDiv, StyledLink, StyledToolBar, StyledTypography } from './styled';
 import { AppBar } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -8,7 +9,9 @@ const Header = () => {
       <AppBar position="static">
         <StyledToolBar>
           <StyledTypography variant="h6">
-            Skidoo Blog
+            <StyledLink to="/">
+              Skidoo Blog
+            </StyledLink>
           </StyledTypography>
         </StyledToolBar>
       </AppBar>

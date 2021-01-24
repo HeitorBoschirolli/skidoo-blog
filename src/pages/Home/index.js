@@ -1,8 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import PostPaper from '../PostPaper';
+import PostPaper from '../../components/PostPaper';
+import { Container } from '@material-ui/core';
+import { Link } from "react-router-dom";
+import { colors } from '../../helpers/colors';
+import { StyledLink } from '../../components/Header/styled';
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -13,21 +16,23 @@ const useStyles = makeStyles((theme) => {
       padding: theme.spacing(1),
       textAlign: 'center',
       color: theme.palette.text.secondary,
-      backgroundColor: "#181818",
+      backgroundColor: colors.darkGray,
       height: "13rem"
     },
   }
 });
 
-const PostsRow = () => {
+const Home = () => {
   const classes = useStyles();
 
   function FormRow() {
     return (
-      <React.Fragment>
+      <Container>
           <Grid container spacing={3} direction="row">
             <Grid item xs={2}>
-              <PostPaper title="Title" description="desc" />
+              <StyledLink to="/java-lambda-part-one">
+                <PostPaper title="AWS Lambda &amp; Java part I" description="How to use Java in the AWS Lambda functions" />
+              </StyledLink>
             </Grid>
             <Grid item xs={2}>
               <PostPaper></PostPaper>
@@ -45,7 +50,7 @@ const PostsRow = () => {
               <PostPaper></PostPaper>
             </Grid>
           </Grid>
-      </React.Fragment>
+      </Container>
     );
   }
 
@@ -60,4 +65,4 @@ const PostsRow = () => {
   );
 }
 
-export default PostsRow;
+export default Home;
