@@ -226,6 +226,9 @@ const JavaLambdaPartTwo = () => {
                     + "}"
                 }
             </SyntaxHighlighter>
+            <p>
+                The code from this section is in branch part-2-b.
+            </p>
         </TextContainer>
     );
 };
