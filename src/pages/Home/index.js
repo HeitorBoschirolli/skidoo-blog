@@ -35,7 +35,12 @@ const Home = () => {
               </StyledLink>
             </Grid>
             <Grid item xs={2}>
-              <PostPaper></PostPaper>
+              <StyledLink to="/java-lambda-part-two">
+                <PostPaper
+                  title="AWS Lambda &amp; Java part II"
+                  description="Using IaC and deploy scripts"
+                />
+              </StyledLink>
             </Grid>
             <Grid item xs={2}>
               <PostPaper></PostPaper>

@@ -6,7 +6,7 @@ import { CenteredH2, CenteredH3, TextContainer } from "./styled";
 const JavaLambdaPartOne = () => {
     return (
         <TextContainer>
-            <CenteredH2>Using AWS Lambda With Java</CenteredH2>
+            <CenteredH2>Using AWS Lambda With Java Part I</CenteredH2>
             <CenteredH3>Introduction</CenteredH3>
             <p>
                 This is a multi-part series on how to use AWS Lambda with Java.
